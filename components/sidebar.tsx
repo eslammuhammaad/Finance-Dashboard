@@ -46,7 +46,7 @@ export default function Sidebar() {
   );
 }
 
-function NavItem({ icon: Icon, className }: { icon: any; className?: string }) {
+function NavItem({ icon: Icon, className }: { icon: React.ComponentType<{ size: number }>; className?: string }) {
   return (
     <div
       className={`p-2 hover:bg-gray-700 rounded-md cursor-pointer ${className}`}

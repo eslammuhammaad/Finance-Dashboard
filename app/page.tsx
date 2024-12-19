@@ -66,7 +66,7 @@ export default function DashboardPage() {
       <FinancialRatios />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
         <div className="lg:col-span-3">
-          <span className="text-white font-extrabold text-2xl">Main Value</span>
+          <span className="text-2xl font-bold text-white mb-6">Main Value</span>
           <Card className="bg-zinc-900 border-zinc-800 p-4 mt-5">
             <h3 className="text-xl font-bold mb-4 text-white">$48,762.9</h3>
             <div className="h-[200px]">
@@ -88,7 +88,7 @@ export default function DashboardPage() {
         </div>
 
         <div className="lg:col-span-1.5">
-          <span className="text-white font-extrabold text-2xl">Revenue</span>
+          <span className="text-2xl font-bold text-white mb-6">Revenue</span>
           <Card className="bg-zinc-900 border-zinc-800 p-4 mt-5">
             <h3 className="text-lg font-semibold mb-4 text-white">Revenue</h3>
             <div className="h-[200px]">
@@ -111,7 +111,7 @@ export default function DashboardPage() {
         </div>
 
         <div className="lg:col-span-1.5">
-          <span className="text-white font-extrabold text-2xl">Expenses</span>
+          <span className="text-2xl font-bold text-white mb-6">Expenses</span>
           <Card className="bg-zinc-900 border-zinc-800 p-4 mt-5">
             <h3 className="text-lg font-semibold mb-4 text-white">Expenses</h3>
             <div className="h-[200px]">
@@ -130,7 +130,7 @@ export default function DashboardPage() {
       </div>
       <div className="bg-gray-900 mt-3 text-white">
         <Card className="bg-zinc-900 text-white p-6 border-zinc-800">
-          <h2 className="text-xl mb-4">Cash Flow</h2>
+          <h2 className="text-2xl font-bold text-white mb-6">Cash Flow</h2>
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-2">
               <h3 className="text-3xl font-bold">$48,762.29</h3>
@@ -167,7 +167,7 @@ export default function DashboardPage() {
         {/* Scenario Analysis Section */}
         <div className="flex justify-between gap-8 mb-8">
           <div className="bg-zinc900 p-6 w-1/2 rounded-lg">
-            <h3 className="text-xl font-semibold mb-4">Projected Revenue</h3>
+            <h3 className="text-2xl font-bold text-white mb-6">Projected Revenue</h3>
             <input
               type="number"
               value={projectedRevenue}
@@ -184,7 +184,7 @@ export default function DashboardPage() {
           </div>
 
           <div className="bg-zinc-900 p-6 w-1/2 rounded-lg">
-            <h3 className="text-xl font-semibold mb-4">Expenses</h3>
+            <h3 className="text-2xl font-bold text-white mb-6">Expenses</h3>
             <input
               type="number"
               value={expenses}
@@ -212,7 +212,7 @@ export default function DashboardPage() {
 
         {/* Summary Insights Section */}
         <div className="bg-black p-6 rounded-lg mb-8">
-          <h3 className="text-xl font-semibold mb-4">Summary Insights</h3>
+          <h3 className="text-2xl font-bold text-white mb-6">Summary Insights</h3>
           <div className="flex justify-between items-center mb-6">
             <button
               onClick={() =>
